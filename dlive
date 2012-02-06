@@ -1,0 +1,22 @@
+#include <standard-x11>
+
+firmware-linux
+firmware-linux-nonfree
+firmware-ralink 
+firmware-realtek
+zd1211-firmware
+firmware-atheros 
+firmware-intelwimax 
+firmware-iwlwifi 
+atmel-firmware
+
+wireless-tools
+wicd
+wicd-gtk
+wicd-curses
+
+lxde
+gdm3 
+dillo
+
+aircrack-ng
