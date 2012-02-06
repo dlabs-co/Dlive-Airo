@@ -6,6 +6,7 @@ lb config noauto \
     --mirror-binary-security http://security.eu.debian.org/ \
     --mirror-chroot-security http://security.eu.debian.org \
     --apt apt \
+    --clean \
     --bootloader grub \
     --linux-flavours 486 \
     --hooks minimal \
@@ -26,7 +27,6 @@ lb config noauto \
     --system live \
     --win32-loader true \
     -b iso \
-    --templates /home/xayon/devel/Personal/Dlive/Templates \
     "${@}"
 
 
