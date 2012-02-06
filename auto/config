@@ -1,0 +1,33 @@
+#!/bin/sh
+lb config noauto \
+    --mirror-binary http://ftp.fr.debian.org/debian/ \
+    --mirror-chroot http://ftp.fr.debian.org/debian/ \
+    --mirror-bootstrap http://ftp.fr.debian.org/debian/ \
+    --mirror-binary-security http://security.eu.debian.org/ \
+    --mirror-chroot-security http://security.eu.debian.org \
+    --apt apt \
+    --bootloader grub \
+    --linux-flavours 486 \
+    --hooks minimal \
+    --memtest none \
+    --iso-application "Dlive Airo" \
+    --iso-publisher "David Francos (XayOn) <me@davidfrancos.net>" \
+    --iso-volume "Dlive Airo" \
+    --apt-secure "false" \
+    --apt-recommends disabled \
+    --package-lists "dlive" \
+    --distribution wheezy \
+    --hostname dlive \
+    --username airo\
+    --architecture i386 \
+    --debian-installer true \
+    --debian-installer-gui true\
+    --archive-areas "main contrib non-free" \
+    --system live \
+    --win32-loader true \
+    -b iso \
+    --templates /home/xayon/devel/Personal/Dlive/Templates \
+    "${@}"
+
+
+#    --clean \
