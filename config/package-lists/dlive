@@ -1,5 +1,9 @@
 #include <standard-x11>
 
+# 3.3 kernel
+linux-image-3.3.0-trunk-686-pae
+
+# Wireless firmware
 firmware-linux
 firmware-linux-nonfree
 firmware-ralink 
@@ -10,13 +14,16 @@ firmware-intelwimax
 firmware-iwlwifi 
 atmel-firmware
 
+# Connection manager, probably need to be removed
 wireless-tools
 wicd
 wicd-gtk
 wicd-curses
 
+# Window manager and web browser
 lxde
-gdm3 
+nodm 
 dillo
 
+# Aircrack-ng, from dlabs repos.
 aircrack-ng
