@@ -1,2 +1,6 @@
-adeskbar & midori & pekwm
+hsetroot -fill ~/.bg.png
+adeskbar & 
+midori & 
+sudo xterm -e airoscript-ng -pzenity &
+pekwm
 

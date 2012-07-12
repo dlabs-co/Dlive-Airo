@@ -8,7 +8,7 @@ last-window-height=745
 show-statusbar=false
 toolbar-items=Back,Forward,ReloadStop,BookmarkAdd,Location,TabNew,CompactMenu,
 load-on-startup=MIDORI_STARTUP_HOMEPAGE
-homepage=http://usr/share/doc/dlive/index.html
+homepage=file:///usr/share/doc/dlive/index.html
 text-editor=gnome-text-editor %F
 location-entry-search=https://duckduckgo.com/?q=%s
 enable-html5-database=true

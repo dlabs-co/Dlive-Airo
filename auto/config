@@ -9,6 +9,7 @@ lb config noauto \
     --bootloader grub \
     --linux-flavours 486 \
     --hooks minimal \
+	--linux-packages "linux-image-3.4-trunk"\
     --memtest none \
     --iso-application "Dlive Airo" \
     --iso-publisher "David Francos (XayOn) <me@davidfrancos.net>" \

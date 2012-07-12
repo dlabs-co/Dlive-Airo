@@ -1,7 +1,5 @@
 #include <standard-x11>
-
-# 3.3 kernel
-linux-image-3.3.0-trunk-686-pae
+aircrack-ng
 
 # Wireless firmware
 firmware-linux
@@ -18,12 +16,20 @@ atmel-firmware
 wireless-tools
 wicd
 wicd-gtk
-wicd-curses
 
 # Window manager and web browser
-lxde
-nodm 
-dillo
+nodm
+midori
+pekwm
 
-# Aircrack-ng, from dlabs repos.
-aircrack-ng
+# Window manager deps
+gnome-menus libblas3 libblas3gf libgfortran3 libgnome-menu2 liblapack3 liblapack3gf menu-xdg python-cairo python-gmenu python-gtk2
+ hsetroot python-numpy python-xdg
+
+# Aircrack-ng deps
+libpcap0.8 libsqlite3-0 libssl1.0.0 zlib1g wireless-tools xterm python graphviz macchanger
+dsniff hydra zenity pyrit sslstrip wkhtmltopdf john
+
+
+
+
