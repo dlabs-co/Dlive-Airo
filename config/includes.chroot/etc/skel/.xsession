@@ -1,0 +1,2 @@
+adeskbar & midori & pekwm
+

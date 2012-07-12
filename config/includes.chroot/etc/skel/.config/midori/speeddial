@@ -1,0 +1,11 @@
+[settings]
+columns=3
+rows=3
+
+[Dial 1]
+uri=http://dlive.degeneratedlabs.net 
+title=Dlive homepage
+
+[Dial 2]
+uri=http://airoscript.aircrack-ng.org
+title=Airoscript-ng

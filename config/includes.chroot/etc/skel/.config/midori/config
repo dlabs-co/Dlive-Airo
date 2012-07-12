@@ -1,0 +1,22 @@
+
+[settings]
+default-encoding=ISO-8859-1
+default-font-family=Droid Sans
+enable-site-specific-quirks=true
+last-window-width=679
+last-window-height=745
+show-statusbar=false
+toolbar-items=Back,Forward,ReloadStop,BookmarkAdd,Location,TabNew,CompactMenu,
+load-on-startup=MIDORI_STARTUP_HOMEPAGE
+homepage=http://usr/share/doc/dlive/index.html
+text-editor=gnome-text-editor %F
+location-entry-search=https://duckduckgo.com/?q=%s
+enable-html5-database=true
+user-agent=Mozilla/5.0 (Macintosh; U; Intel Mac OS X; es-es) AppleWebKit/535+ (KHTML, like Gecko) Version/5.0 Safari/535.4+ Midori/0.4
+
+[extensions]
+libtabs-minimized.so=true
+libstatus-clock.so=true
+libcolorful-tabs.so=true
+libadblock.so=true
+libstatusbar-features.so=true

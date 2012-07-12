@@ -17,15 +17,10 @@ lb config noauto \
     --apt-recommends disabled \
     --package-lists "dlive" \
     --distribution sid \
-    --hostname dlive \
-    --username airo\
     --architecture i386 \
-    --debian-installer true \
-    --debian-installer-gui true\
     --archive-areas "main contrib non-free" \
     --system live \
     --clean \
-    --win32-loader true \
     -b iso \
     "${@}"
 
