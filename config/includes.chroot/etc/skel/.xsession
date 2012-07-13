@@ -1,6 +1,5 @@
 hsetroot -fill ~/.bg.png
-adeskbar & 
+pekwm &
 midori & 
-sudo xterm -e airoscript-ng &
-pekwm
-
+sleep 2 && wmctrl -r midori -badd,fullscreen
+adeskbar 
