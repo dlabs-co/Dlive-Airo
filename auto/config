@@ -1,29 +1,32 @@
 #!/bin/sh
 lb config noauto \
-    --mirror-binary http://ftp.fr.debian.org/debian/ \
-    --mirror-chroot http://ftp.fr.debian.org/debian/ \
-    --mirror-bootstrap http://ftp.fr.debian.org/debian/ \
-    --mirror-binary-security http://security.eu.debian.org/ \
-    --mirror-chroot-security http://security.eu.debian.org \
-    --apt apt \
-    --bootloader grub \
-    --linux-flavours 486 \
-    --hooks minimal \
+	--mirror-binary http://ftp.fr.debian.org/debian/ \
+	--mirror-chroot http://ftp.fr.debian.org/debian/ \
+	--mirror-bootstrap http://ftp.fr.debian.org/debian/ \
+	--mirror-binary-security http://security.eu.debian.org/ \
+	--mirror-chroot-security http://security.eu.debian.org \
+	--apt apt \
+	--mode progress \
+	--iso-publisher "DegeneratedLabs <staff@degeneratedlabs.net> "\
+	--linux-flavours 486 \
+	--hooks minimal \
 	--linux-packages "linux-image-3.4-trunk"\
-    --memtest none \
-    --iso-application "Dlive Airo" \
-    --iso-publisher "David Francos (XayOn) <me@davidfrancos.net>" \
-    --iso-volume "Dlive Airo" \
-    --apt-secure "false" \
-    --apt-recommends disabled \
-    --package-lists "dlive" \
-    --distribution sid \
-    --architecture i386 \
-    --archive-areas "main contrib non-free" \
-    --system live \
-    --clean \
-    -b iso \
-    "${@}"
+	--memtest none \
+	--iso-application "Dlive Airo" \
+	--iso-volume "Dlive Airo" \
+	--apt-secure "false" \
+	--apt-recommends disabled \
+	--package-lists "dlive" \
+	--distribution sid \
+	--architecture i386 \
+	--archive-areas "main contrib non-free" \
+	--system live \
+	--clean \
+	-b iso \
+	"${@}"
 
+#	--debian-installer live \
 
-#    --clean \
+#	--grub-splash "config/binary_grub/spash.tga" \
+#	--bootappend-live "quiet splash vga=792"\
+#	--bootloader grub \
