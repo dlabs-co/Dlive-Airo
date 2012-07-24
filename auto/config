@@ -1,32 +1,28 @@
 #!/bin/sh
 lb config noauto \
-	--mirror-binary http://ftp.fr.debian.org/debian/ \
-	--mirror-chroot http://ftp.fr.debian.org/debian/ \
-	--mirror-bootstrap http://ftp.fr.debian.org/debian/ \
-	--mirror-binary-security http://security.eu.debian.org/ \
-	--mirror-chroot-security http://security.eu.debian.org \
-	--apt apt \
-	--mode progress \
-	--iso-publisher "DegeneratedLabs <staff@degeneratedlabs.net> "\
-	--linux-flavours 486 \
-	--hooks minimal \
-	--linux-packages "linux-image-3.4-trunk"\
-	--memtest none \
-	--iso-application "Dlive Airo" \
-	--iso-volume "Dlive Airo" \
-	--apt-secure "false" \
-	--apt-recommends disabled \
-	--package-lists "dlive" \
-	--distribution sid \
-	--architecture i386 \
-	--archive-areas "main contrib non-free" \
-	--system live \
-	--clean \
-	-b iso \
-	"${@}"
+    --mirror-binary http://localhost:3142/ftp.fr.debian.org/debian/ \
+    --mirror-binary-security http://localhost:3142/security.eu.debian.org/ \
+    --mirror-chroot http://localhost:3142/ftp.fr.debian.org/debian/ \
+    --mirror-bootstrap http://localhost:3142/ftp.fr.debian.org/debian/ \
+    --parent-mirror-chroot http://localhost:3142/ftp.fr.debian.org/debian/ \
+    --parent-mirror-bootstrap http://localhost:3142/ftp.fr.debian.org/debian/ \
+    --mirror-chroot-security http://localhost:3142/security.eu.debian.org \
+    --apt apt \
+    --linux-flavours 486 \
+    --hooks minimal \
+    --bootloader grub \
+    --linux-packages "linux-image-3.4-trunk"\
+    --memtest none \
+    --iso-application "DegeneratedLabs" \
+    --iso-publisher "David Francos (XayOn) <dfrancos@degeneratedlabs.net>" \
+    --iso-volume "Dlive Airo 1.2" \
+    --apt-secure "false" \
+    --apt-recommends disabled \
+    --package-lists "dlive" \
+    --distribution sid \
+    --architecture i386 \
+    --archive-areas "main contrib non-free" \
+    --clean \
+    -b iso \
+    "${@}"
 
-#	--debian-installer live \
-
-#	--grub-splash "config/binary_grub/spash.tga" \
-#	--bootappend-live "quiet splash vga=792"\
-#	--bootloader grub \
