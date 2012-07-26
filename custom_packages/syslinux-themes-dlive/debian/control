@@ -1,0 +1,17 @@
+Source: syslinux-themes-dlive
+Section: misc
+Priority: optional
+Maintainer: David Francos <me@davidfrancos.net> 
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.3
+
+Package: syslinux-themes-dlive
+Architecture: all
+Depends: ${misc:Depends}
+Description: collection of boot loaders (theme metapackage)
+ SYSLINUX is a collection of boot loaders which operates off Linux ext2/3/4 or
+ btrfs filesystems, MS-DOS FAT filesystems, network servers using PXE firmware,
+ or from CD-ROMs.
+ .
+ This package depends on the package with the graphical bootloader theme
+ for dlive live distro.

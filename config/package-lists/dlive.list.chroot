@@ -1,0 +1,39 @@
+#include <standard-x11>
+iw
+aircrack-ng
+
+# Wireless firmware
+firmware-linux
+firmware-linux-nonfree
+firmware-ralink 
+firmware-realtek
+zd1211-firmware
+firmware-atheros 
+firmware-intelwimax 
+firmware-iwlwifi 
+atmel-firmware
+
+# Connection manager, probably need to be removed
+wireless-tools
+
+# Window manager and web browser
+nodm
+midori
+pekwm
+xfe
+wmctrl
+xcompmgr
+
+# Window manager deps
+gnome-menus libblas3 libblas3gf libgfortran3 libgnome-menu2 liblapack3 liblapack3gf menu-xdg python-cairo python-gmenu python-gtk2
+ libnotify-bin hsetroot python-numpy python-xdg
+
+# Aircrack-ng deps
+gettext libpcap0.8 libsqlite3-0 libssl1.0.0 zlib1g wireless-tools xterm python graphviz macchanger
+dsniff hydra zenity pyrit sslstrip wkhtmltopdf john
+
+# Moar tools
+zenmap
+wireshark
+
+

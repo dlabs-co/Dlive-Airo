@@ -1,1 +1,1 @@
-deb http://localhost:3142/repo.degeneratedlabs.net/debian aircrackng-unstable/ 
+deb http://repo.degeneratedlabs.net/debian aircrackng-unstable/ 

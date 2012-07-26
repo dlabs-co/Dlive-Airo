@@ -1,1 +1,1 @@
-include ".themes/elementary//gtk-2.0/gtkrc"
+include "/usr/share/themes/elementary/gtk-2.0/gtkrc"

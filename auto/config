@@ -1,18 +1,18 @@
 #!/bin/sh
 lb config noauto \
-    --mirror-binary http://localhost:3142/ftp.fr.debian.org/debian/ \
-    --mirror-binary-security http://localhost:3142/security.eu.debian.org/ \
-    --mirror-chroot http://localhost:3142/ftp.fr.debian.org/debian/ \
-    --mirror-bootstrap http://localhost:3142/ftp.fr.debian.org/debian/ \
-    --parent-mirror-chroot http://localhost:3142/ftp.fr.debian.org/debian/ \
-    --parent-mirror-bootstrap http://localhost:3142/ftp.fr.debian.org/debian/ \
-    --mirror-chroot-security http://localhost:3142/security.eu.debian.org \
+    --mirror-binary http://ftp.debian.org/debian/ \
+    --mirror-binary-security http://security.eu.debian.org/ \
+    --mirror-chroot http://ftp.debian.org/debian/ \
+    --mirror-bootstrap http://ftp.debian.org/debian/ \
+    --parent-mirror-chroot http://ftp.debian.org/debian/ \
+    --parent-mirror-bootstrap http://ftp.debian.org/debian/ \
+    --mirror-chroot-security http://security.eu.debian.org \
     --apt apt \
-    --linux-flavours 486 \
+	--bootappend-live "locales=us,es username=dlive hostname=dlive" \
+	--linux-flavours 486 \
     --hooks minimal \
-    --bootloader grub \
-    --linux-packages "linux-image-3.4-trunk"\
     --memtest none \
+	--debian-installer live\
     --iso-application "DegeneratedLabs" \
     --iso-publisher "David Francos (XayOn) <dfrancos@degeneratedlabs.net>" \
     --iso-volume "Dlive Airo 1.2" \
@@ -21,8 +21,17 @@ lb config noauto \
     --package-lists "dlive" \
     --distribution sid \
     --architecture i386 \
+    --linux-packages "linux-image-3.4-trunk"\
     --archive-areas "main contrib non-free" \
     --clean \
     -b iso \
     "${@}"
 
+
+#    --mirror-binary http://localhost:3142/ftp.debian.org/debian/ \
+#    --mirror-binary-security http://localhost:3142/security.eu.debian.org/ \
+#    --mirror-chroot http://localhost:3142/ftp.debian.org/debian/ \
+#    --mirror-bootstrap http://localhost:3142/ftp.debian.org/debian/ \
+#    --parent-mirror-chroot http://localhost:3142/ftp.debian.org/debian/ \
+#    --parent-mirror-bootstrap http://localhost:3142/ftp.debian.org/debian/ \
+#    --mirror-chroot-security http://localhost:3142/security.eu.debian.org \
